@@ -2,13 +2,14 @@
 def agregar_estudiante(registros):
     nombre = input("Ingrese el nombre del estudiante: ")
     edad = int(input("Ingrese la edad del estudiante: "))
-    registros.append({'nombre': nombre, 'edad': edad})
+    telefono = input("Ingrese el número de teléfono del estudiante: ")
+    registros.append({'nombre': nombre, 'edad': edad, 'telefono': telefono})
 
 # Definir una función para mostrar todos los estudiantes
 def mostrar_estudiantes(registros):
     print("Lista de estudiantes:")
     for estudiante in registros:
-        print(f"Nombre: {estudiante['nombre']}, Edad: {estudiante['edad']}")
+        print(f"Nombre: {estudiante['nombre']}, Edad: {estudiante['edad']}, Teléfono: {estudiante['telefono']}")
 
 # Programa principal
 def main():
